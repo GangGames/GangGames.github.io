@@ -1,0 +1,283 @@
+/* esta es una plantilla de agregar fuentes a css convertidas a woff. woff2 */
+/* 
+esta forma es para indicarla en html sin ponerla en css
+<link rel="preload" href="JapaneseStyle.woff2" as="font" type="font/woff2" crossorigin> */
+
+@font-face {
+    font-family: 'JapStyle';
+    src: url('JapaneseStyle.woff2') format('woff2'),
+        url('JapaneseStyle.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Itachi';
+    src: url('ZenzaiItachi.woff2') format('woff2'),
+        url('ZenzaiItachi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ChineseTakeaway';
+    src: url('ChineseTakeaway.woff2') format('woff2'),
+        url('ChineseTakeaway.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gang of Three';
+    src: url('GangofThree.woff2') format('woff2'),
+        url('GangofThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zenzai Itache';
+    src: url('ZenzaiItache.woff2') format('woff2'),
+        url('ZenzaiItache.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zenzai Itacha';
+    src: url('ZenzaiItacha.woff2') format('woff2'),
+        url('ZenzaiItacha.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shanghai';
+    src: url('Shanghai.woff2') format('woff2'),
+        url('Shanghai.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hirosh';
+    src: url('Hirosh.woff2') format('woff2'),
+        url('Hirosh.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+
+    background: rgb(100, 93, 93);
+}
+
+/*para seleccionar los id utilizamos #  */
+
+/*para seleccionar las clases utilizamos .  */
+.tablas {
+
+    padding: 0px 5px;
+    /*agrega espacio al rededor del texto o objeto*/
+    text-transform: capitalize;
+    /* asigna la primera letra de cada palabra a mayuscula */
+    text-align: center;
+    background-color: rgb(226, 101, 101);
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+/* para seleccionar clases de etiquetas dentro de una etiqueta
+utilizamos el nombre de la etiqueta y la que esta dentro*/
+div p {
+    color: aqua;
+}
+
+div h3 {
+    color: aqua;
+    background-color: tomato;
+}
+
+/*para seleccionar clases de etiquetas especificas el nombre de la etiqueta un (.) luego la clase*/
+p.pares {
+    color: rgb(5, 4, 7);
+}
+
+/*hay que recordar que si hay dos comando del mismo tipo la ultima entrada reemplazara la primera*/
+
+/*debajo se muestra el selector universal que tiene la caracteristica de  este es que puede dar estilo a todo lo que no tenga una ya aplicado */
+* {
+    font-style: arial;
+}
+
+/*border como su nombre sirve paa acgregar bordes a html*/
+
+.pies {
+    /* border: 3px blue inset; */
+
+
+    /*entre las aplicaciones de border estan:
+
+    dotted
+    dashed
+    solid
+    double
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+    border-radius: 5px;
+    /*para dar formas circular*/
+    border-style: solid;
+    border-color: red;
+    border-width: 1rem;
+}
+
+.par {
+    /*background como su nombre lo indica*/
+    background-color: rgba(202, 255, 55, 0.5);
+    /*background-image como su nombre lo indica*/
+    background-image: url("portada\ gg.png");
+    height: 300px 50px;
+    background-size: cover;
+}
+
+#fondo {
+    /* background-image: url("portada\ gg.png");
+    background-image: url("portada gg.png");
+    background-size: 100px 100px;
+    background-repeat: repeat-y,x o xy entre otras para que la imagen o elemento se repita
+    background-position: center top; con estos valores
+    se puede ubicar la imagen o lo que estemos utilizando
+    utilizando dos valores el primero para el valor horizontal y el segundo para el valor vertical
+
+    tambien se pueden agrupa como se ve a continuacion
+    */
+    height: auto;
+    background: #f00 url("1.jpg") repeat center /25px;
+}
+
+.margen {
+    /*agrega espacio al rededor del texto o objeto*/
+    background-color: #f00;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    border: solid 2px black;
+    height: auto;
+    width: 250px;
+    overflow: visible;
+    outline: solid 2px rosybrown;
+
+}
+
+.text {
+    /* modificacion de terto */
+    font-size: 20px;
+    font-family: "arial";
+    text-align: justify;
+    text-decoration: rgb(45, 53, 160) overline underline;
+    text-shadow: rgb(5, 7, 8) -2px 3px 5px;
+}
+
+/*a:link {
+    ase referencia a un link que no ha visitado el usuario
+    color: #000;
+}
+
+a:visited {
+    ase referencia a un link visitado
+    color: #000;
+}
+
+a:hover {
+    ase referencia a un link cuendo el mause pasa por encima del link
+    color: red;
+}
+
+a:active {
+    /*ase referencia a un link cuando acemos click sobre este 
+    color: rgb(255, 217, 0);
+}
+/*esto tambien se puede aplicar a otros elementos como tablas botones etc...*/
+
+/* #fondo:hover {
+    color: aqua;
+    background-color: aqua;
+} */
+button:hover {
+    color: rgb(255, 51, 0);
+    background-color: rgb(65, 100, 110);
+}
+
+button:active {
+    color: rgb(255, 217, 0);
+    background-color: #f00;
+}
+
+
+table tr th:hover {
+    color: rgb(221, 202, 139);
+}
+table tr td:hover {
+    color: rgb(0, 238, 255);
+}
+.li {
+    display: none;
+   list-style-type: none;
+   padding: 0;
+}
+.li:hover {
+    visibility: visible;
+}
+.cont {
+    width: 80%;
+    margin: 0 auto;
+}
+.math {
+    math-style: "suma";
+}
+.mathr {
+    math-style: "";
+}
+
+/*selectores de atributo 
+para seleccionar atributo se utilizan las llaves dobler []
+
+[href]
+[for]
+
+de esta forma podemos seleccionar cualquier atributa en nuestra web para darle estilo
+tambien se le pueden asignar a elementos espesificos en los atributos
+
+<a href="sorprendeme.html">Sorprendeme</a>
+[href^="sorprendeme"] {                    (^) se utiliza para seleccionar los atirbuto que empiesen con ese valor
+    color: rgb(255, 217, 0);
+    background-color: #f00;
+}
+
+<a href="sorprendeme-cantando.html">Sorprendeme</a>
+[href*="cantando"] {                    (*) se utiliza para seleccionar los atirbuto que tengan en cualquier parte este valor con ese valor
+    color: rgb(255, 217, 0);
+    background-color: #f00;
+}
+
+<a href="sopa-cosida.html">Sorprendeme</a>                          este es el atributo href="sopa-cosida.html"
+[href$="html"] {                    ($) se utiliza para seleccionar los atirbuto que terminen con este valor con ese valor
+    color: rgb(255, 217, 0);
+    background-color: #f00;
+}
+<a href="lata-detras-ada">Sorprendeme</a>                          este es el atributo href="lata-detras-ada"           en este caso (lata-) esta presente por eso es elegible 
+[href|="lata"] {                    (|) se utiliza para seleccionar los atirbuto que contengan ese nombre o ese nombre con un guion(-) con este valor con ese valor
+    color: rgb(255, 217, 0);          esto se utiliza mucho para atributo de idiomas [lang|="en"] ya que los idiomas traen el tag de id del idioma y el pais en-US, en-GB,etc.
+    background-color: #f00;
+}
+
